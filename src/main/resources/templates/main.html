@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<link type="text/css" href="webjars/bootstrap/4.5.3/css/bootstrap.min.css"
+      rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="getAll()">
+
+<main class="container-fluid text-center d-flex justify-content-center">
+
+    <div class="row d-flex justify-content-center text-center">
+        <h3 class="col-12">Model qo'shish</h3>
+        <input class="col-12 form-control" id="ism" placeholder="ism">
+        <button class="col-12 btn btn-success" onclick="add()" name="button" id="button">Qo'shish</button>
+
+
+
+        <div class="col-12 mt-5" id="root">
+
+        </div>
+
+
+    </div>
+
+
+
+
+</main>
+
+</body>
+<script th:inline="javascript" th:src="@{js/js.js}"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</html>
